@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eat Sandwich</title>
+    <title>jQuery Sandwich Click</title>
 </head>
 <body>
+    <h1>Click to Eat Sandwich</h1>
     
+    <button id="pb">Peanut Butter Sandwich</button>
+    <button id="grilledcheese">Grilled Cheese Sandwich</button>
+    <button id="beef">Beef Sandwich</button>
+    
+    <div id="image-div"></div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+        var pbCounter = 0;
+        var grilledCheeseCounter = 0;
+        var beefCounter = 0;
+
+        $('#pb').on('click', function (){
+            alert('You choose Peanut Butter Sandwich!');
+            pbCounter++;
+            alert("You've eaten " + pbCounter + " Peanut Butter Sandwiches!");
+
+            $('#image-div').html(
+                "<img src='https://i1.wp.com/snotapwi.com/wp-content/uploads/2017/03/PBJ-Sandwiches.jpg?resize=590%2C368&ssl=1' />"
+            );
+        });
+
+    </script>
 </body>
 </html>
