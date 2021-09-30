@@ -11,7 +11,7 @@
     
     <button id="pb">Peanut Butter Sandwich</button>
     <button id="grilledcheese">Grilled Cheese Sandwich</button>
-    <button id="beef">Beef Sandwich</button>
+    <button id="beef">Fried Chicken Sandwich</button>
     
     <div id="image-div"></div>
 
@@ -22,7 +22,7 @@
 
         var pbCounter = 0;
         var grilledCheeseCounter = 0;
-        var beefCounter = 0;
+        var friedChickenCounter = 0;
 
         $('#pb').on('click', function (){
             alert('You choose Peanut Butter Sandwich!');
@@ -47,8 +47,8 @@
 
         $('#beef').on('click', function(){
             alert("You've ordered Beef Sandwich!");
-            beefCounter++;
-            alert("You've eaten " + beefCounter + " Beef Sandwiches!");
+            friedChickenCounter++;
+            alert("You've eaten " + friedChickenCounter + " Fried Cheese Sandwiches!");
 
             $('#image-div').html(
                 "<img src='https://www.cscassets.com/recipes/wide_cknew/wide_25336.jpg' />"
