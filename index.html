@@ -15,7 +15,7 @@
     
     <div id="image-div"></div>
 
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script type="text/javascript">
@@ -31,6 +31,27 @@
 
             $('#image-div').html(
                 "<img src='https://i1.wp.com/snotapwi.com/wp-content/uploads/2017/03/PBJ-Sandwiches.jpg?resize=590%2C368&ssl=1' />"
+            );
+        });
+
+        $('#grilledcheese').on('click', function (){
+            alert("You choose Grilled Cheese Sandwich!");
+            grilledCheeseCounter++;
+            alert("You've eaten " + grilledCheeseCounter + " Grilled Cheese Sandwiches!")
+            
+
+            $('#image-div').html(
+                "<img src='http://cdn.funcheap.com/wp-content/uploads/2014/04/The-Perfect-Grilled-Cheese-Sandwich-800-158111.jpg' />"
+            );
+        });
+
+        $('#beef').on('click', function(){
+            alert("You've ordered Beef Sandwich!");
+            beefCounter++;
+            alert("You've eaten " + beefCounter + " Beef Sandwiches!");
+
+            $('#image-div').html(
+                "<img src='https://www.cscassets.com/recipes/wide_cknew/wide_25336.jpg' />"
             );
         });
 
